@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attendance Management System - View Attendance</title>
+	<link rel="stylesheet" type="text/css" href="view.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#" onclick="window.location.href='/Users/shourya080/Downloads/RecordsWeb3/Dashboard/dash copy.html'">Dashboard</a></li>
+				<li><a href="#">Settings</a></li>
+				<li><a href="#">Logout</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="space-2"></div>
+	<main>
+		<div class="attendance-container">
+			<h2>View Attendance Records</h2>
+			<form>
+				<label for="batch">Select Batch:</label>
+				<select id="batch" name="batch">
+					<option value="batch-a">Batch A</option>
+					<option value="batch-b">Batch B</option>
+				</select>
+				<br>
+				<div class="space"></div>
+				<button type="submit" class="button-primary">Get Attendance Report</button>
+			</form>
+			<div class="space-1"></div>
+			<table>
+				<thead>
+					<tr>
+						<th>Date &nbsp; &nbsp; &nbsp; &nbsp;</th>
+						<th>Name &nbsp; &nbsp; &nbsp; &nbsp;</th>
+						<th>Attendance Status</th>
+					</tr>
+				</thead>
+			</table>
+			<div class="submit-buttons">
+				<button type="submit" class="button-primary">Generate Report</button>
+				<button type="submit" class="button-secondary">Cancel</button>
+			</div>
+		</div>
+	</main>
+	<div class="space-3"></div>
+	<footer>
+		<p>RecordsWeb3, The Web3 Attendance Management Platform</p>
+	</footer>
+</body>
+</html>

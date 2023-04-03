@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attendance Management System - Take Attendance</title>
+	<link rel="stylesheet" type="text/css" href="take.css">
+</head>
+<body>
+	<header>
+		<h1>Attendance Management System</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Dashboard</a></li>
+				<li><a href="#">Attendance</a></li>
+				<li><a href="#">Students</a></li>
+				<li><a href="#">Settings</a></li>
+				<li><a href="#">Logout</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="attendance-container">
+			<h2>Class Attendance</h2>
+			<form>
+				<label for="class-timing">Class Timing:</label>
+				<select id="class-timing" name="class-timing">
+					<option value="8:00AM-9:00AM">8:00AM-9:00AM</option>
+					<option value="9:00AM-10:00AM">9:00AM-10:00AM</option>
+					<option value="10:00AM-11:00AM">10:00AM-11:00AM</option>
+				</select>
+				<div class="space"></div>
+				<label for="batch">Batch:</label>
+				<select id="batch" name="batch">
+					<option value="Batch A">Batch A</option>
+					<option value="Batch B">Batch B</option>
+					<option value="Batch C">Batch C</option>
+				</select>
+				<h3>Students:</h3>
+				<ul>
+					<li>
+						<span>John Doe</span>
+						<button class="button-primary">Give Attendance</button>
+					</li>
+					<li>
+						<span>Jane Smith</span>
+						<button class="button-primary">Give Attendance</button>
+					</li>
+					<li>
+						<span>Bob Johnson</span>
+						<button class="button-primary">Give Attendance</button>
+					</li>
+				</ul>
+			</form>
+		</div>
+	</main>
+</body>
+</html>
