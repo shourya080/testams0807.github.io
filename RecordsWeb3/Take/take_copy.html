@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attendance Management System - Take Attendance</title>
+	<link rel="stylesheet" type="text/css" href="take.css">
+</head>
+<body>
+	<header>
+		<h1>Attendance Management System</h1><br>
+		<nav>
+			<ul>
+				<li><a href="#" onclick="window.location.href='/Users/shourya080/Downloads/RecordsWeb3/Dashboard/dash copy.html'" >Dashboard</a></li>
+				<li><a href="#">Settings</a></li>
+				<li><a href="#">Logout</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="attendance-container">
+			<h2>Class Attendance</h2>
+			<form>
+				<label for="class-timing">Class Timing:</label>
+				<select id="class-timing" name="class-timing">
+					<option value="8:00AM-9:00AM">8:00AM-9:00AM</option>
+					<option value="9:00AM-10:00AM">9:00AM-10:00AM</option>
+					<option value="10:00AM-11:00AM">10:00AM-11:00AM</option>
+				</select>
+				<div class="space"></div>
+				<label for="batch">Batch:</label>
+				<select id="batch" name="batch">
+					<option value="Batch A">Batch A</option>
+					<option value="Batch B">Batch B</option>
+					<option value="Batch C">Batch C</option>
+				</select>
+				<h3>Create Attendance Link:</h3>
+				<button  class="btn-create" onclick="generateAttendanceLink()">Create</button>
+				<div><p> Attendance Link: <span id="create-link"></span></p></div>
+			</form>
+		</div>
+	</main>
+	<footer>
+		<p>RecordsWeb3, The Web3 Attendance Management Platform</p>
+	</footer>
+	<script src='/Users/shourya080/Downloads/RecordsWeb3/Take/take.js'></script>
+</body>
+</html>
